@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #6c04db;
+  }
+  body{
+    background-image: url(imgs/Roof.jpg);
+    background-repeat: no-repeat;
+    
+  }
+.menu{
+    display: block;
+    padding: 30px;
+    text-align: center;
+    background-color: #260050;
+    
+}
+.menu a{
+    color: yellow;
+    background-color: #260050;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px;
+}
+.textos{
+    top: 90px;
+    position: relative;
+    color: rgb(255, 217, 0);
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 5px;
+}
+.textos h1::first-letter{
+    font-weight: bold;
+    font-size: 60px;
+}
+.textos p{
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.videos{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 78px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%; 
+}
+.audioz{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 800px;
+    opacity: 30%;
+}
+.imgs {
+    position: fixed; 
+    bottom: 0; 
+    left: -1; 
+    animation: moveRight 20s linear infinite ;
+    
+}
+.alucard{
+    width: 150px; 
+    height: auto; 
+    object-fit: cover;    
+}
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
