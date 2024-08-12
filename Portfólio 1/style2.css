@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: yellowgreen;
+    box-shadow:  5px 0 6px rgb(80, 108, 26);
+}
+
+.sidebar-pos {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+}
+
+.img-sidebar {
+    text-align: center;
+}
+
+.img-sidebar img {
+    width: 25%;
+    border: 4px solid rgb(183, 245, 59);
+    border-radius: 25%;
+}
+
+.menu {
+    margin: 19px 0;
+    text-align: center;
+    left: -20px;
+}
+
+.menu a {
+    color: white;
+    opacity: 0.5;
+    font-size: 17.2px;
+    display: block;
+    margin-bottom: 17.2px;
+    text-decoration: none;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.menu a.selected {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: aquamarine;
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+section.descricao {
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+}
+
+.icons-social img {
+    width: 3%;
+    height: 3%;
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(50%) contrast(50%);
+    min-width: 1.5%;
+    min-height: 1.5%;
+    display: inline-block;
+}
+
+.icons-social a {
+    margin: 10% 10px;
+}
+
+section.descricao h2 {
+    color: #343a40;
+    font-size: 46px;
+}
+
+section.descricao h2 > span,
+section.descricao h3 > span {
+    color: yellowgreen;
+}
+
+section.descricao h3 {
+    margin: 15px 0;
+    color: #4d5760;
+    font-size: 26px;
+}
+
+section.descricao p {
+    margin-top: 40px;
+    color: #616f7b;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+section.descricao p > span {
+    background: linear-gradient(yellowgreen, rgb(187, 205, 50), rgb(205, 174, 50));
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
